@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anbessa Shoes</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .container {
+        max-width: 1200px;
+        margin-top: 25%;
+      }
+      .product {
+        width: 800px;
+        margin: 0 auto;
+        border: 4px solid #000;
+        position: relative;
+      }
+      .product::before {
+        content: "SALE";
+        position: absolute;
+        background-color: red;
+        color: #fff;
+        padding: 10px 20px;
+        top: -20px;
+        left: -45px;
+      }
+      .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        padding: 20px 40px;
+      }
+      .main-header h1 {
+        text-transform: uppercase;
+      }
+      .product-content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .product-image {
+        width: 250px;
+      }
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 30%;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      .price-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* flex: 0 0 30%; */
+      }
+      .price {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .shipping {
+        font-size: 12px;
+        color: #666;
+        text-transform: uppercase;
+      }
+
+      .more-info {
+        color: #000;
+      }
+      .product-color {
+        display: flex;
+        gap: 10px;
+      }
+      .product-box {
+        width: 22px;
+        height: 22px;
+        /* background-color: #000; */
+        align-self: flex-start;
+      }
+
+      .black {
+        background-color: #000;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .red {
+        background-color: red;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+
+      .green {
+        background-color: green;
+      }
+      .brown {
+        background-color: brown;
+      }
+
+      .product-details {
+        margin-top: 20px;
+      }
+      .product-details h3 {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .product-details ul li {
+        list-style: square;
+        margin-bottom: 20px;
+      }
+
+      .add-to-cart {
+        background-color: #000;
+        color: #fff;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <article class="product">
+        <header class="main-header">
+          <h1>Anbessa Top Star Shoes</h1>
+        </header>
+        <main class="product-content">
+          <img
+            class="product-image"
+            src="https://anbessashoesc.com/images/2019/09/01/anbessa-shoe-bottom-banner3.jpg"
+            alt="anbessa shoes photo shots"
+          />
+          <div class="product-info">
+            <div class="price-info">
+              <p class="price"><strong>ETB 1,800.00</strong></p>
+              <p class="shipping">Free Shipping</p>
+            </div>
+            <p class="description">
+              Ready to dress up or down, these Anbessa Top Star Shoes are
+              designed to keep you comfortable and stylish.
+            </p>
+            <a href="https://anbessashoesc.com" class="more-info"
+              >More Information &rarr;</a
+            >
+            <div class="product-color">
+              <div class="product-box black"></div>
+              <div class="product-box blue"></div>
+              <div class="product-box red"></div>
+              <div class="product-box yellow"></div>
+              <div class="product-box green"></div>
+              <div class="product-box brown"></div>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <h3>Product Details</h3>
+            <ul>
+              <li>Lightweight and comfortable</li>
+              <li>Durable and sturdy</li>
+              <li>High-quality materials</li>
+              <li>Ergonomic design</li>
+            </ul>
+          </div>
+        </main>
+        <button class="add-to-cart">Add to Cart</button>
+      </article>
+    </div>
+  </body>
+</html>
